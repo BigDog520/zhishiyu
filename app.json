@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/jobsInfo/jobsInfo",
+    "pages/personCenter/personCenter",
+    "pages/workDetail/workDetail",
+    "pages/register/register",
+    "pages/register1/register",
+    "pages/login/login"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#74E8C2",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "职时雨",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "backgroundColor": "#F0F0F0",
+    "color": "#515151",
+    "selectedColor": "#74E8C2",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/image/home.png",
+        "selectedIconPath": "pages/image/home_activity.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/personCenter/personCenter",
+        "iconPath": "pages/image/person.png",
+        "selectedIconPath": "pages/image/person_activity.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+page {
+  height: 100%;
+  width: 100%;
+}
+
+.noJobs {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.noRecord {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20rpx;
+  color: #999;
+}
+
+.find {
+  margin-top: 20rpx;
+  padding: 50rpx 100rpx;
+  background-color: #74e8c2;
+  border-radius: 10%;
+}
+.workList{
+  border: 1px #999 solid;
+  margin: 20rpx 10rpx;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.share{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10rpx 0 30rpx;
+  background-color: #00E89C;
+  color: white;
+  border-radius: 0 0 20rpx 20rpx;
+}
+.work {
+  width: 100%;
+  padding: 30rpx 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  width: 65%;
+  color: #74e8c2;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.time {
+  width: 30%;
+  color: #999;
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,30 @@
+<!-- 先接收userID  如果为null  出现 登录/注册 如果有值传入 则显示个人的信息 -->
+<view wx:if="{{!islogin}}" class='register'>
+  <button class="registerbtn" bindtap='login'>登录</button>
+  <button class="registerbtn" bindtap='register'>注册</button>
+</view>
+<view wx:else class="islogin">
+  <view class='userInfo'>
+    <view class='isloginImg'>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </view>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class='updataInfo' bindtap='updataInfo'>修改/编辑信息</text>
+  </view>
+  <view class='workInfo'>
+    <view bindtap='myJobs' id="signUp">已报名</view>
+    <view bindtap='myJobs' id='employment'>已录用</view>
+    <view bindtap='myJobs' id="wroking">已到岗</view>
+    <view bindtap='myJobs' id="settlement">已结算</view>
+  </view>
+  <view class='otherInfo'>
+     <view class='wallet'>
+      <text>我的钱包</text>
+      <text><block>0</block>元></text>
+     </view>
+     <view class='wallet'>
+      <text>意见反馈</text>
+      <text>></text>
+     </view>
+  </view>
+</view>

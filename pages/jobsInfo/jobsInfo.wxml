@@ -1,0 +1,16 @@
+<!--如果存在工作信息 -->
+<view wx:if='{{work.length > 0}}'>
+  <view class='workList' wx:for='{{work}}'>
+    <view class='work' bindtap='workDetail'  data-id='{{item.ptid}}'>
+      <text class='name'>{{item.workNmae}}</text>
+      <text class='time'>{{item.public_time}}</text>
+    </view>
+    <view wx:if='{{workInfo === "signUp" || workInfo === "employment" || workInfo === "employment"}}'class='share' bindtap='share'>分享助力</view>
+  </view>
+</view>
+<!--如果不存在工作信息 -->
+<view wx:else class='noJobs'>
+  <view class='noRecord'>你还没有记录哦~</view>
+  <!-- 跳转 主页 错误 主页有请求-->
+  <navigator open-type="switchTab" class='find' url="../index/index">去找兼职</navigator>
+</view>

@@ -1,0 +1,20 @@
+<view style='position:fixed;top:35%;left:12%'>
+<view class='regInfo'>
+    <text class='regDescribe'>学校</text>
+      <picker class="regInput" bindchange="bindPickerChange" value="{{index}}" range="{{chooseschool}}">
+        <view class="picker" style="height:21px;">{{chooseschool[index]}}</view>
+      </picker>
+  </view>
+
+  <view class='regInfo'>
+    <text class='regDescribe'>学号</text>
+    <input type='number' class='regInput' bindinput='sid'></input>
+  </view>
+</view>
+
+
+<view class='footer'>
+  <view class='footer_left'>返回</view><!--跳转登录页面-->
+  <view class='footer_right' bindtap='login'>登录</view><!--带参跳转登录页面-->
+</view>
+

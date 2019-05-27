@@ -1,0 +1,14 @@
+<view class="indexbox">
+  <image src='../image/1.png' mode='widthFix'></image>
+  <text class='header'>兼职列表</text>
+  <view class='workList' wx:for='{{workList}}' data-id='{{item.ptid}}' bindtap='showWork' hover-class='white'>
+    <view class='listLeft'>
+      <text class='name'>{{item.ptname}}</text>
+      <text class='info'>{{item.ptad}}</text>
+    </view>
+    <view class='listRight'>
+      <text class='sal'>{{item.salary}}</text>
+      <text class='time'>{{item.pttime}}</text>
+    </view>
+  </view>
+</view>

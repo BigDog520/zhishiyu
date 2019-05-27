@@ -1,0 +1,44 @@
+
+.registerBox{
+  margin-top: 50rpx;
+}
+.regInfo{
+  display: flex;
+  flex-flow: nowrap;
+  width: 100%;
+  padding: 30rpx 20rpx;
+  border:#ccc solid 1px;
+}
+.regDescribe{
+  width: 30%;
+}
+.regInput{
+  text-align: right;
+  width: 65%;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  height: 110rpx;
+  width: 100%;
+}
+.footer_left{
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: #74E8C2;
+}
+.footer_right{
+  background-color: #74E8C2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: white;
+}

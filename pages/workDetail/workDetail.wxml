@@ -1,0 +1,60 @@
+<view class="detailbox">
+
+  <view class='header'>
+    <text class='title'>{{wdptcontent[0].ptname}}</text>
+    <text class='sal'>{{wdptcontent[0].salary}}</text>
+    <view class='base_info'>
+      <text class='info'>{{wdptcontent[0].ptad}} | 兼职类型 | 浏览量</text>
+      <text class='public_time'>{{wdptcontent[0].rltime}}</text>
+    </view>
+  </view>
+  <view class='main_title'>
+    <text class='main_title_text'>招聘要求</text>
+    <view class="solid"></view>
+  </view>
+  <view class='requirement'>  <!--循环兼职要求-->
+    <text class='key'>结算周期：</text>
+    <text class='value'>当天结算</text>
+  </view>
+
+  <view class='main_title'>
+    <text class='main_title_text'>工作内容</text>
+    <view class="solid"></view>
+  </view>
+  <view class='content'>
+    <text decode="{{true}}">{{wdptcontent[0].ptcontent}}</text>
+  </view>
+
+
+  <view class='main_title'>
+    <text class='main_title_text'>工作时间</text>
+    <view class="solid"></view>
+  </view>
+  <view class='workTime'>
+    <text class='key'>时间要求：</text>
+    <text class='value'>10小时</text>
+  </view>
+
+  <view class='main_title' style='margin-bottom:20rpx;'>
+    <text class='main_title_text'>工作地点</text>
+    <view class="solid"></view>
+  </view>  
+  <!-- map.wxml -->
+<text class='address' style='margin-left:30rpx;fontsize'>{{wdptcontent[0].ptad}}</text>
+<view class='navbox' bindtap='navigation'>
+  <image src='../image/navigation.jpg'  mode='widthFix'></image>
+  <view class='navigation'>
+    <image src='../image/nav1.png'></image>
+    <text>点击查看地址</text>
+    <image src='../image/nav2.png'></image>  
+  </view>
+</view>
+
+</view>
+<view class='footer' wx:if='{{ pattern === "index" }}'>
+  <button class='footer_left' open-type="share" >我要分享</button>
+  <view class='footer_right' bindtap='lijibaoming'>
+    <view>立即报名</view>
+    <!--<span>（已报名：{{sum}}人）</span>-->
+  </view>
+</view>

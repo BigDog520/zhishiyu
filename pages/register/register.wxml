@@ -1,0 +1,33 @@
+<view class='registerBox'>
+  <view class='regInfo'>
+    <text class='regDescribe'>姓名</text>
+    <input class='regInput' bindinput='userName'></input>
+  </view>
+  <view class='regInfo'>
+    <text class='regDescribe'>性别</text>
+    <radio-group class='regInput' bindchange="radioChange">
+      <radio value='male'>男</radio>
+      <radio value='female'>女</radio>
+    </radio-group>
+  </view>
+  <view class='regInfo'>
+    <text class='regDescribe'>学校</text>
+      <picker class="regInput" bindchange="bindPickerChange" value="{{index}}" range="{{chooseschool}}">
+        <view class="picker" style="height:21px;">{{chooseschool[index]}}</view>
+      </picker>
+  </view>
+  <view class='regInfo'>
+    <text class='regDescribe'>电话号码</text>
+    <input type='number' class='regInput' bindinput='userPhone'></input>
+  </view>
+  <view class='regInfo'>
+    <text class='regDescribe'>学号</text>
+    <input type='number' class='regInput' bindinput='sid'></input>
+  </view>
+</view>
+
+
+<view class='footer'>
+  <view class='footer_left' bindtap='back'>返回</view><!--跳转登录页面-->
+  <view class='footer_right' bindtap='saveInfo'>保存</view><!--带参跳转登录页面-->
+</view>
